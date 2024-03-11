@@ -12,4 +12,5 @@
 2. git 사용법
  -  git bash 사용 (mingw64는 애뮬레이터의 한종류 윈도우즈 환경에서 gcc를 사용하게 해주는 프로그램)
 
- - git status(변경사항 조회) > git add(깃에 올릴 파일 추가) > 
+ - git status(변경사항 조회) > git add(깃에 올릴 파일 추가) > git commit(git에 저장 commit의 상태로 저장하기에 코드의 수정이 용이하다)
+  > git push(git에 올린다)
