@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>202327057안제철</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <div id="main">
+        <div id="d_TOP">
+            <p><span id="student_name">안제철</span>
+                <span id="student_id">202327057</span></p>
+        </div>
+        <div id="d_Left">
+            <a href="canvas.html"><button class="button">버튼1</button></a>
+            <a href="game.html"><button class="button">버튼2</button></a>
+        </div>
+        <div id="d_Right">
+            <canvas id="mycanvas" style="background-color: aliceblue;"width="300" height="200">
+            </canvas>
+        </div>
+    </div>
+    <script>
+        let canvas = document.getElementById('mycanvas');
+        let context = canvas.getContext('2d');
+        context.beginPath();
+        context.strokeStyle = 'magenta';
+        context.arc(150,100,80,0,2*Math.PI,false);
+        context.stroke();
+    </script>
+</body>
+</html>
