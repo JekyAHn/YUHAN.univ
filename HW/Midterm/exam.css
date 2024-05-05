@@ -1,0 +1,41 @@
+canvas {
+    margin: 50px auto; /* 50px씩 떨어뜨리기 */
+    background-color: rgb(180, 180, 180); /* 배경색 RGB 설정 */
+}
+
+html {
+    background-color: rgb(72, 153, 242); /* 배경색 RGB 설정 */
+}
+
+body { 
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */ 
+}
+
+#main {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    color: yellowgreen;
+}
+
+#start {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(177, 177, 177);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #f0cc6a;
+}
+
+#start:active {
+    background-color: rgb(117, 117, 247);
+}
