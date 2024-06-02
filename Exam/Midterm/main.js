@@ -77,6 +77,7 @@ window.onload = function() {
         drawStar(starX, starY, 5, 20, 40, -18, 'yellow', 'black', 1); // 별 그리기
     }
 
+    // 키보드 이벤트 리스너
     document.addEventListener('keydown', function(event) {
         switch(event.key) {
             case 'ArrowUp':
@@ -92,6 +93,9 @@ window.onload = function() {
                 playerX += moveSpeed;
                 break;
         }
+        // 별의 좌표 재설정
+        starX = Math.random() * canvas.width - canvas.width / 2;
+        starY = Math.random() * canvas.height - canvas.height / 2;
     });
 
     // 60프레임으로 애니메이션 실행

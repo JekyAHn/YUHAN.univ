@@ -1,41 +1,87 @@
-canvas {
-    margin: 50px auto; /* 50px씩 떨어뜨리기 */
-    background-color: rgb(180, 180, 180); /* 배경색 RGB 설정 */
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72, 153, 242);
 }
 
-html {
-    background-color: rgb(72, 153, 242); /* 배경색 RGB 설정 */
+canvas 
+{
+    display: block;
+    margin: auto;
+    background-color: rgb(180, 180, 180);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-body { 
-    display: flex; /* Flexbox 사용 */
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */ 
-}
-
-#main {
+.playbutton 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 200px;
 }
 
-h1 {
-    color: yellowgreen;
-}
-
-#start {
+#start-button 
+{
+    display: block;
+    margin: auto;
     padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(177, 177, 177);
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover
+{
+    background-color: #FF5733; 
+}
+
+#start-button:active
+{
+    background-color: #1E90FF; 
+}
+
+h1 
+{
+    margin-top: 20px;
+    color: white;
+}
+
+.die 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#restart-button 
+{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-#start:hover {
-    background-color: #f0cc6a;
+#restart-button:hover 
+{
+    background-color: #FF5733; 
 }
 
-#start:active {
-    background-color: rgb(117, 117, 247);
+#restart-button:active 
+{
+    background-color: #1E90FF; 
 }
