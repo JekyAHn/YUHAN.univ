@@ -1,0 +1,87 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72, 153, 242);
+}
+
+canvas 
+{
+    display: block;
+    margin: auto;
+    background-color: rgb(180, 180, 180);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.playbutton 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#start-button 
+{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover
+{
+    background-color: #FF5733; 
+}
+
+#start-button:active
+{
+    background-color: #1E90FF; 
+}
+
+h1 
+{
+    margin-top: 20px;
+    color: white;
+}
+
+.die 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#restart-button 
+{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover 
+{
+    background-color: #FF5733; 
+}
+
+#restart-button:active 
+{
+    background-color: #1E90FF; 
+}
